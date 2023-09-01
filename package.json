@@ -1,0 +1,16 @@
+{
+  "name": "goiteensjsadhw13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel *.html", "build": "parcel build src/*.html public-url/goiteensjsadhw13/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "parcel-bundler": "^1.12.5"
+  }
+}
