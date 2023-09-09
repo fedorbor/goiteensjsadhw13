@@ -66,3 +66,26 @@ const debouncedSearch = debounce((event) => {
 
 
 input.addEventListener('input', debouncedSearch);
+
+fetch('https://api.weatherstack.com/current?access_key=dc560742019ba3764cc3d50d2871c607&query=NewYork')
+.then(response=>response.json)
+
+fetch('https://newsapi.org/v2/everything?q=flowers&apiKey=7fa7f39ba916462da4c74931272f395d') 
+.then(response=>response.json())
+.then(console.log)
+
+fetch('https://pixabay.com/api/?key=39207240-5c487a84c917432aa28d0bb48&q=yellow+flowers&image_type=photo') 
+.then(response=>response.json())
+.then(console.log)
+let url = 'https://pixabay.com/api/?key=39207240-5c487a84c917432aa28d0bb48&q=yellow+flowers&image_type=photo';
+function getImage(key){
+  return fetch(key)
+  .then(resp=>resp.json) 
+
+}
+console.log(getImage(url)); 
+const options = {
+  headers:{
+      'X-Api-Key': '3ce63eea477043d7a470d2b21dc5ab4b'
+  }
+}
